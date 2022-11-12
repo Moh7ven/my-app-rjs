@@ -6,13 +6,12 @@ function App() {
   const [nom, setNom] = useState({ nom: "Konate", prenom: "Bakary" });
   const [x, setX] = useState(0);
   const changeNom = () => {
-  setNom({nom:"koffi",prenom:"Anon"})
+  setNom({nom:"Koffi",prenom:"Anon"})
 }
   return (
     <>
       <div>{nom.nom}</div>
       <div>{nom.prenom}</div>
-
       <div>
         <button onClick={changeNom}>clic pour changer de nom</button>
       </div>
