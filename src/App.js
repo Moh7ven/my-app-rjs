@@ -1,10 +1,32 @@
-import './App.css';
+import "./App.css";
+
+import { useState } from "react";
 
 function App() {
+  const [nom, setNom] = useState({ nom: "Konate", prenom: "Bakary" });
+  const [x, setX] = useState(0);
+  const changeNom = () => {
+  setNom({nom:"koffi",prenom:"Anon"})
+}
   return (
-    <div className="App">
-      <p> Oui, nous sonmmes dans le Reat JS</p>
-    </div>
+    <>
+      <div>{nom.nom}</div>
+      <div>{nom.prenom}</div>
+
+      <div>
+        <button onClick={changeNom}>clic pour changer nom</button>
+      </div>
+      <div>{x}</div>
+      <div>
+        <button
+          onClick={() => {
+            setX((prev) => prev + 1);
+          }}
+        >
+          clic
+        </button>
+      </div>
+    </>
   );
 }
 
