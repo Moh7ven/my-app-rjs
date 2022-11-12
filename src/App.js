@@ -14,7 +14,7 @@ function App() {
       <div>{nom.prenom}</div>
 
       <div>
-        <button onClick={changeNom}>clic pour changer nom</button>
+        <button onClick={changeNom}>clic pour changer de nom</button>
       </div>
       <div>{x}</div>
       <div>
